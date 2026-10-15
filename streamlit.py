@@ -2,7 +2,7 @@ import streamlit as st
 from gtts import gTTS
 from io import BytesIO
 
-st.set_pageconfig(page_title="TEXT TO SPEECH",page_icon="<|")
+st.set_page_config(page_title="TEXT TO SPEECH",page_icon="<|")
 
 st.title("TEXT TO SPEECH")
 
@@ -14,7 +14,7 @@ languages={
 
     
 }
-lang_name=st.selectbox("Language:",list(language.keys()))
+lang_name=st.selectbox("Language:",list(languages.keys()))
 slow=st.checkbox("Speak slowly")
 
 if st.button("convert to speech"):
