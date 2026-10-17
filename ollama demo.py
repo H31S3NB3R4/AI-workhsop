@@ -19,7 +19,7 @@ completion = client.chat(
         },
         {"role": "user", "content": question},
     ],
-    think=True,
+    think=False,
     options={
         "temperature":10,
     
